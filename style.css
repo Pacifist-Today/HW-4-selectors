@@ -1,0 +1,52 @@
+/*
+tag(div) - позволяет задать стили данному тегу
+#id (#parag) позволяет задать стили данному id
+.class (.url) позволяет задать стили данному классу
+по нескольким классам и тегу h2.highletter.secondclass
+Комбинированные h2 #anotherpar .ssilka - тег, id, класс
+a[target="_blank"] Устанавливает стиль для элемента если задано определённое значение атрибута.
+p a[href^="https://"] Задаёт стили если в начале тега содержится заданное значение "https://"
+[href*="google"] Задаёт стили если в тега содержится заданное значение "google"
+b a[href$=".com"] Задаёт стили если в конце тега содержится заданное значение ".com"
+br~p Задаёт стили если соблюдается вложенность и используются родственые теги
+*/
+
+div{
+    color:red;
+}
+
+#parag {
+    color:orange;
+}
+
+.url {
+    color:green;
+}
+
+h2.highletter.secondclass {
+    color: blue;
+}
+
+h2 #anotherpar .ssilka {
+    color:grey;
+}
+
+a[target="_blank"] {
+    color: brown;
+}
+
+p a[href^="https://"]{
+    color:violet;
+}
+
+[href*="google"] {
+    color: yellow;
+   }
+
+b a[href$=".com"] {
+     color:darkcyan;
+ }
+
+ br~p {
+      color: aqua; 
+    }
